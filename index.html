@@ -33,20 +33,24 @@
             <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-small-only">
                 <li><a href="index.html"><i class="material-icons left">view_module</i>Inicio</a></li>
-                <li><a href="sass.html"><i class="material-icons left">contacts</i>Historia</a></li>
-                <li><a href="sass.html"><i class="material-icons left">graphic_eq</i>Graficas</a></li>
+                <li><a href="html/eolica.html"><i class="material-icons left">contacts</i>Historia</a></li>
+                <li><a href="html/graficas.html"><i class="material-icons left">graphic_eq</i>Graficas</a></li>
                 <li><a href="html/forms.html"><i class="material-icons left">dialpad</i>Consultar Consumo</a></li>
                 <!-- <li><a href="sass.html"><i class="material-icons left">search</i>Buscar</a></li> -->
 
             </ul>
         </div>
     </nav>
-    <ul class="sidenav" id="mobile-demo">
+    <ul class="sidenav" id="mobile-demo" style="background: linear-gradient(90deg, rgb(221, 224, 224) 0%, rgb(251, 253, 252) 50%, rgb(248, 240, 171) 100%);
+">
         <li><a href="index.html"><i class="material-icons left">view_module</i>Inicio</a></li>
-        <li><a href="sass.html"><i class="material-icons left">contacts</i>Historia</a></li>
-        <li><a href="sass.html"><i class="material-icons left">graphic_eq</i>Graficas</a></li>
+        <li><a href="html/eolica.html"><i class="material-icons left">contacts</i>Historia</a></li>
+        <li><a href="html/graficas.html"><i class="material-icons left">graphic_eq</i>Graficas</a></li>
         <li><a href="html/forms.html"><i class="material-icons left">dialpad</i>Consultar Consumo</a></li>
         <!-- <li><a href="sass.html"><i class="material-icons left">search</i>Buscar</a></li> -->
+        <div style="background: cover;">
+            <img src="img/sidva.png" alt="" style="opacity: 0.5;">
+        </div>
     </ul>
     <div class="carousel col-mb3">
         <a id="imagenes" class="carousel-item" href="#one!"><img src="img/eolica 1.jpg"></a>
@@ -55,37 +59,44 @@
         <a id="imagenes" class="carousel-item" href="#four!"><img src="img/oeolica2.jpg"></a>
         <a id="imagenes" class="carousel-item" href="#five!"><img src="img/person-colombia.jpg"></a>
     </div>
-    <br>
-    <br>
     <main>
-        <div id="container-Contenido">
-            <section>
-                <div class="container-parrafo col s12 m6">
-                    <h4>trasicion Eolica</h4>
-                    <p>La transición energética en Colombia se refiere al cambio desde una matriz energética basada en
-                        combustibles fósiles hacia fuentes de energía renovables y limpias, como la solar, eólica e
-                        hidroeléctrica. Este proceso busca asegurar la soberanía energética del país, promover el acceso
-                        democrático a la energía y mitigar el cambio climático. </p>
+        <div class="row">
+            <!-- Texto -->
+            <div class="col s12 m6">
+                <div class="container-parrafo">
+                    <h4>Transición Eólica</h4>
+                    <p>
+                        La transición energética en Colombia se refiere al cambio desde una matriz energética
+                        basada en
+                        combustibles fósiles hacia fuentes de energía renovables y limpias, como la solar,
+                        eólica e
+                        hidroeléctrica. Este proceso busca asegurar la soberanía energética del país, promover
+                        el acceso
+                        democrático a la energía y mitigar el cambio climático.
+                    </p>
                     <h6>Objetivos:</h6>
-                    <p>Colombia busca avanzar hacia una transición energética justa y sostenible, con cinco ejes
-                        principales: mayores inversiones en energías limpias, sustitución progresiva de combustibles
-                        fósiles, mayor eficiencia energética, flexibilización regulatoria y reindustrialización. </p>
-                    <!-- <h6>Avances y retos:</h6>
-                <p>Colombia ha mostrado avances en la implementación de energías renovables, como la energía solar y
-                    eólica, pero aún existen desafíos para alcanzar las metas de reducción de emisiones y carbono
-                    neutralidad. </p> -->
+                    <p>
+                        Colombia busca avanzar hacia una transición energética justa y sostenible, con cinco
+                        ejes
+                        principales: mayores inversiones en energías limpias, sustitución progresiva de
+                        combustibles
+                        fósiles, mayor eficiencia energética, flexibilización regulatoria y reindustrialización.
+                    </p>
                 </div>
-            </section>
-            <section>
-                <div class="container-video col s12 m6 ">
-                    <iframe width="500" height="315" src="https://www.youtube.com/embed/CXclv6F5WvQ?si=WeXFBliL4o4aIqHl"
+            </div>
+
+            <!-- Video -->
+            <div class="col s12 m6">
+                <div class="video-container" style="border-radius: 15px; overflow: hidden; margin-top: 35px;">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/CXclv6F5WvQ?si=WeXFBliL4o4aIqHl"
                         title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                    </iframe>
                 </div>
-            </section>
+            </div>
         </div>
-        </div>
+
         <section>
             <h2>Que puedes encontrar Aqui</h2>
 
@@ -93,7 +104,7 @@
                 <div class="col s12 m4">
                     <div class="card blue-grey darken-1">
                         <div class="card-image">
-                            <img src="img/history.jpg">
+                            <img src="img/history.jpg" style="height: 218px;">
                             <span class="card-title">Historia Eolica</span>
                         </div>
                         <div class="card-content white-text">
@@ -101,7 +112,7 @@
                                 periodo de 1965 a 2022.</p>
                         </div>
                         <div class="card-action">
-                            <a href="#">Ingresar</a>
+                            <a href="html/eolica.html">Ingresar</a>
                         </div>
 
                     </div>
@@ -134,7 +145,7 @@
                                 fuente renovable..</p>
                         </div>
                         <div class="card-action">
-                            <a href="#">Ingresar</a>
+                            <a href="html/graficas.html">Ingresar</a>
                         </div>
                     </div>
                 </div>
