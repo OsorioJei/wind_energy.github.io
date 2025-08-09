@@ -237,55 +237,60 @@
                         <button href="#!" onclick="calcularConsumo(event)" class="btn btn-primary">Cosultar</button>
                     </div>
                     <div class="row" id="tablas">
-                        <table class="responsive-table" id="miTabla" name="miTabla">
-                            <h5>Datos Consumo Usuario</h5>
-                            <thead>
-                                <tr>
-                                    <th>Valor (Kwh)</th>
-                                    <th>Consuno Dia</th>
-                                    <th>valor UND(kwh)</th>
-                                    <th>Precio Total</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><input type="number" id="Valor" name="Valor" readonly></input></td>
-                                    <td> <input type="text" id="Consuno" name="Consuno"></td>
-                                    <td> <input type="text" id="valor_UND" name="valor_UND"></td>
-                                    <td> <input type="text" id="Total" name="Total"></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <table class="responsive-table" id="miTabla" name="miTabla">
-                            <h5>Datos energia eolica</h5>
-                            <p>la energia eolica se realizo como ejemplo que produciera 1 kwh con un vientos inestables
-                                durante
-                                2 horas al dia, con base a estos datos se compara el ahorro en kwh y valores con los
-                                datos del usuario.
-                            </p>
-                            <thead>
-                                <tr>
-                                    <th>(Kwh) producido</th>
-                                    <th>periodo horas</th>
-                                    <th>producido (kwh) dia</th>
-                                    <th>valor (kwh)</th>
-                                    <th>Valor Total</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><input type="number" id="Valore" name="Valore" readonly></input></td>
-                                    <td> <input type="text" id="Consunoe" name="Consunoe"></td>
-                                    <td> <input type="text" id="valor_UNDe" name="valor_UNDe"></td>
-                                    <td> <input type="text" id="Totale" name="Totale"></td>
-                                    <td> <input type="text" id="Totaleo" name="Totaleo"></td>
-                                </tr>
-                            </tbody>
-                        </table>
+                        <h5>Datos Consumo Usuario</h5>
+                        <div style="overflow-x:auto;">
+                            <table class="responsive-table highlight striped" id="miTabla">
+
+                                <thead>
+                                    <tr>
+                                        <th>Valor (Kwh)</th>
+                                        <th>Consuno Dia</th>
+                                        <th>valor UND(kwh)</th>
+                                        <th>Precio Total</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><input type="number" id="Valor" name="Valor" readonly class="browser-default"></input></td>
+                                        <td> <input type="number" id="Consuno" name="Consuno" readonly class="browser-default"></td>
+                                        <td> <input type="number" id="valor_UND" name="valor_UND" readonly class="browser-default"></td>
+                                        <td> <input type="number" id="Total" name="Total" readonly class="browser-default"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <h5>Datos energia eolica</h5>
+                        <p>la energia eolica se realizo como ejemplo que produciera 1 kwh con un vientos inestables
+                            durante
+                            2 horas al dia, con base a estos datos se compara el ahorro en kwh y valores con los
+                            datos del usuario.
+                        </p>
+                        <div style="overflow-x:auto;">
+                            <table class="responsive-table highlight striped" id="miTabla1">
+                                <thead>
+                                    <tr>
+                                        <th>(Kwh) producido</th>
+                                        <th>periodo horas</th>
+                                        <th>producido (kwh) dia</th>
+                                        <th>valor (kwh)</th>
+                                        <th>Valor Total</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><input type="number" id="Valore" name="Valore" readonly class="browser-default"></input></td>
+                                        <td> <input type="number" id="Consunoe" name="Consunoe" readonly class="browser-default"></td>
+                                        <td> <input type="number" id="valor_UNDe" name="valor_UNDe" readonly class="browser-default"></td>
+                                        <td> <input type="number" id="Totale" name="Totale" readonly class="browser-default"></td>
+                                        <td> <input type="number" id="Totaleo" name="Totaleo" readonly class="browser-default"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                         <h5>Ahorro con la energia eolica: </h5>
                         <div class="input-field col s11 m6">
                             <i class="material-icons prefix">battery_charging_full</i>
-                            <input type="number" id="ahorro" name="ahorro" readonly >
+                            <input type="number" id="ahorro" name="ahorro" readonly>
                             <label for="ahorro">ahorro en kwh</label>
                         </div>
                         <div class="input-field col s11 m6">

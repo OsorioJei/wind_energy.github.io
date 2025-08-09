@@ -476,6 +476,11 @@ h3 {
     margin: auto;
 }
 
+table input{
+    width: 100%;
+    border-radius: 5px;
+}
+
 /* ####################### estilos historia eolica ###############3 */
 .card-image img {
     width: 100%;      /* Que no se salga de la tarjeta */
