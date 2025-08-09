@@ -13,7 +13,6 @@
 //     }
 // });
 
-
 //function mostrarGraficabar() {
 // 32,000 kWh. = 32 MW    18.42 GWh Un gigavatio-hora (símbolo GWh)
 

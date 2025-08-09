@@ -1,33 +1,3 @@
-document.addEventListener('DOMContentLoaded', function () {
-  var elems = document.querySelectorAll('.carousel');
-  var instances = M.Carousel.init(elems);
-
-});
-
-// Or with jQuery
-
-
-
-
-document.addEventListener('DOMContentLoaded', function () {
-  var elems = document.querySelectorAll('.sidenav');
-  var instances = M.Sidenav.init(elems);
-});
-
-
-// ################## Formulario #############################3
-
-//Para el select
-document.addEventListener('DOMContentLoaded', function () {
-  var elems = document.querySelectorAll('select');
-  var instances = M.FormSelect.init(elems);
-});
-
-// para la fecha
-document.addEventListener('DOMContentLoaded', function () {
-  var elems = document.querySelectorAll('.datepicker');
-  var instances = M.Datepicker.init(elems);
-});
 
 
 //// modal
@@ -159,10 +129,11 @@ function calcularConsumo(e) {
   document.getElementById("ahorro").value = ahorro
   document.getElementById("ahorrov").value = total_precio_eolica
   document.getElementById("ahorro1").value = ahorrov
-
+  M.updateTextFields();
   mostrarGraficouser();
-  // form.reset()
 
+  // form.reset()
+  
 }
 
 
@@ -201,7 +172,7 @@ function mostrarGraficouser() {
         plugins: {
             subtitle: {
                 display: true,
-                text: 'Custom Chart Subtitle'
+                text: 'comparativo kwh usuario y kwh eolica'
             }
         }
     }

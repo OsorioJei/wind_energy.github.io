@@ -4,19 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Transicion</title>
-
+    <title>Consulta Consumo</title>
+    <link rel="icon" href="../img/favicon.ico">
     <!-- estilos css -->
     <link rel="stylesheet" href="../css/Styles.css">
     <link rel="stylesheet" href="../materialize/css/materialize.css">
     <link rel="stylesheet" href="../materialize/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-
-    <script src="../materialize/js/materialize.js"></script>
-    <script src="../materialize/js/materialize.min.js"></script>
-    <script src="../js/componentesMaterialize.js"></script>
-    <script src="../js/jquery-3.7.1.min.js"></script>
 </head>
 
 <body>
@@ -60,22 +54,23 @@
                     <form class="col s12" id="formulario" name="formulario" action="/guardar_datos"
                         onsubmit="ObtenerDatos(event)">
                         <div class="row">
-                            <div class="input-field col s5">
+                            <!-- <div class="col s12 m6"> -->
+                            <div class="input-field col s11 m5">
                                 <i class="material-icons prefix">account_circle</i>
                                 <input id="nombre" name="nombre" type="text" class="validate" required>
                                 <label for="nombre">Nombre Completo</label>
                             </div>
-                            <div class="input-field col s3">
+                            <div class="input-field col s11 m3">
                                 <i class="material-icons prefix">phone</i>
                                 <input id="telefono" name="telefono" type="tel" class="validate" required>
                                 <label for="telefono">Telefono</label>
                             </div>
-                            <div class="input-field col s4">
+                            <div class="input-field col s11 m4">
                                 <i class="material-icons prefix">email</i>
                                 <input id="email" name="email" type="email" class="validate" required>
                                 <label for="email">Email</label>
                             </div>
-                            <div class="input-field col s3">
+                            <div class="input-field col s11 m3">
                                 <i class="material-icons prefix">home</i>
                                 <select id="ciudad" name="ciudad" required>
                                     <option value="" disabled selected>Ciudad</option>
@@ -90,7 +85,7 @@
                                 </select>
                                 <label for="ciudad">Seleccione la ciudad</label>
                             </div>
-                            <div class="input-field col s3">
+                            <div class="input-field col s11 m3">
                                 <i class="material-icons prefix">local_airport</i>
 
                                 <select id="pais" name="pais" required>
@@ -101,7 +96,7 @@
                                 </select>
                                 <label for="pais">Selecione el pais</label>
                             </div>
-                            <div class="input-field col s3" style="display: flex;">
+                            <div class="input-field col s11 m3" style="display: flex;">
                                 <i class="material-icons prefix">face</i>
                                 <div style="margin-top: -20px;">
 
@@ -121,7 +116,7 @@
                                     </label>
                                 </p>
                             </div>
-                            <div class="input-field col s3">
+                            <div class="input-field col s11 m3">
                                 <i class="material-icons prefix">event_available</i>
                                 <input type="text" id="fecha-hasta" name="fecha-hasta" class="datepicker" required>
                                 <label for="fecha-hasta">Fecha de registro</label>
@@ -135,12 +130,12 @@
                                 Para conseguirlo el usuario únicamente deberá ingresar su consumo eléctrico
                                 total (kWh)</p>
 
-                            <div class="input-field col s3">
+                            <div class="input-field col s11 m3">
                                 <i class="material-icons prefix">flash_on</i>
                                 <input id="consumo" name="consumo" type="number" class="validate" required>
                                 <label for="consumo">Consumo (kWh)</label>
                             </div>
-                            <div class="input-field col s3">
+                            <div class="input-field col s11 m3">
                                 <i class="material-icons prefix">event_note</i>
                                 <input type="number" id="fecha-inicio" name="fecha-inicio" class="validate" required>
                                 <label for="fecha-inicio">Periodo Consuno</label>
@@ -158,7 +153,6 @@
                             </button>
 
                             <!-- <button type="submit" class="btn btn-primary">Enviar</button> -->
-
                         </div>
                     </form>
 
@@ -174,35 +168,35 @@
                             <div class="row " id="Datos_Formulario">
                                 <h5>Datos del Usuario</h5>
                                 <div class="row">
-                                    <div class="input-field col s6">
+                                    <div class="input-field col s11 m7">
                                         <i class="material-icons prefix">account_circle</i>
                                         <input id="nombreobtenido" name="nombreobtenido" readonly>
                                     </div>
-                                    <div class="input-field col s6">
+                                    <div class="input-field col s11 m5">
                                         <i class="material-icons prefix">phone</i>
                                         <input id="telobtenido" name="telobtenido" type="tel" readonly>
                                     </div>
-                                    <div class="input-field col s6">
+                                    <div class="input-field col s11 m6">
                                         <i class="material-icons prefix">email</i>
                                         <input id="emailobtenido" name="emailobtenido" type="email" class="validate"
                                             readonly>
                                     </div>
-                                    <div class="input-field col s4">
+                                    <div class="input-field col s11 m6">
                                         <i class="material-icons prefix">home</i>
                                         <input id="ciudadobtenida" name="ciudadobtenida" type="text" class="validate"
                                             readonly>
                                     </div>
-                                    <div class="input-field col s6">
+                                    <div class="input-field col s11 m6">
                                         <i class="material-icons prefix">local_airport</i>
                                         <input id="paisobtenido" name="paisobtenido" type="text" class="validate"
                                             readonly>
                                     </div>
-                                    <div class="input-field col s2">
+                                    <div class="input-field col s11 m2">
                                         <i class="material-icons prefix">face</i>
                                         <input id="generobtenido" name="generobtenido" type="text" class="validate"
                                             readonly>
                                     </div>
-                                    <div class="input-field col s4">
+                                    <div class="input-field col s11 m4">
                                         <i class="material-icons prefix">event_note</i>
                                         <input type="text" id="fechahastaontenido" name="fechahastaontenido" readonly>
 
@@ -215,12 +209,12 @@
                                         Para conseguirlo el usuario únicamente deberá ingresar su consumo eléctrico
                                         total (kWh)</p>
 
-                                    <div class="input-field col s4">
+                                    <div class="input-field col s8 m4">
                                         <i class="material-icons prefix">flash_on</i>
                                         <input id="Consumobtenido" name="Consumobtenido" type="number" class="validate"
                                             readonly>
                                     </div>
-                                    <div class="input-field col s4">
+                                    <div class="input-field col s8 m6">
                                         <i class="material-icons prefix">event_note</i>
                                         <input type="number" id="fechadesdeontenido" name="fechadesdeontenido" readonly>
 
@@ -237,9 +231,7 @@
 
                             </div>
                         </form>
-
                     </div>
-
                     <div class="modal-footer">
                         <button href="#!" class="modal-close waves-effect btn btn-primary">Salir</button> |
                         <button href="#!" onclick="calcularConsumo(event)" class="btn btn-primary">Cosultar</button>
@@ -291,17 +283,17 @@
                             </tbody>
                         </table>
                         <h5>Ahorro con la energia eolica: </h5>
-                        <div class="input-field col s4">
+                        <div class="input-field col s11 m6">
                             <i class="material-icons prefix">battery_charging_full</i>
-                            <input type="number" id="ahorro" name="ahorro" readonly>
+                            <input type="number" id="ahorro" name="ahorro" readonly >
                             <label for="ahorro">ahorro en kwh</label>
                         </div>
-                        <div class="input-field col s4">
+                        <div class="input-field col s11 m6">
                             <i class="material-icons prefix">monetization_on</i>
                             <input type="number" id="ahorrov" name="ahorrov" readonly>
                             <label for="ahorrov">ahorro en valores</label>
                         </div>
-                        <div class="input-field col s4">
+                        <div class="input-field col s11 m6">
                             <i class="material-icons prefix">done</i>
                             <input type="number" id="ahorro1" name="ahorro1" readonly>
                             <label for="ahorro1">Valor de su Factura</label>
@@ -311,13 +303,20 @@
                         <h5>Grafica</h5>
                         <canvas id="energiaUser" width="100" height="100"></canvas>
                     </section>
+                    <br>
+                    <br>
                 </div>
         </section>
-        <br>
     </main>
     <footer>
         <p>Copy 2025 - Bootcamp - Todos los derechos reservados</p>
     </footer>
+
+    <script src="../materialize/js/materialize.js"></script>
+    <script src="../materialize/js/materialize.min.js"></script>
+    <script src="../js/componentesMaterialize.js"></script>
+    <script src="../js/jquery-3.7.1.min.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="../script/script.js"></script>
